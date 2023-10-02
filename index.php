@@ -17,18 +17,17 @@
   <header>
     <!-- place navbar here -->
   </header>
-  <main>
-    <h1>hola mundoa</h1>
+  <main>   
 
     <?php      
-      echo $_SERVER['HTTP_HOST'], "<br>";; 
-      echo $_SERVER['REQUEST_URI'],"<br>";;
+      // echo $_SERVER['HTTP_HOST'], "<br>"; 
+      // echo $_SERVER['REQUEST_URI'],"<br>";
 
       $pagebe = explode("/", $_SERVER['REQUEST_URI']);
       echo $pagebe[0];
 
-      if($pagebe[0] == ""){
-        echo "estas en el index";
+      if($pagebe[0] == ""){        
+        include_once "vistas/index.php";
       }else{
         echo "no estas en el index";
       }
