@@ -28,6 +28,7 @@
 
       if($pagebe[0] == ""){        
         include_once "vistas/index.php";
+        echo "estas en el index";
       }else{
         echo "no estas en el index";
       }
